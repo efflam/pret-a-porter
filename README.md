@@ -1,2 +1,2 @@
 # pret-a-porter (WIP)
-> 📦 Primitive [Preact](https://github.com/developit/preact) components styled with [Fela](https://github.com/rofrischmann/fela/)
+> 📦 Box, Grid, Cell components built with [Preact](https://github.com/developit/preact) and styled with [Fela](https://github.com/rofrischmann/fela/)
