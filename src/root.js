@@ -22,9 +22,10 @@ const Root = (
     children
   }
 ) => {
+  const renderer = configureFela(theme)
   return (
     <ThemeProvider theme={theme}>
-      <Provider mountNode={getFelaMountNode()} renderer={configureFela(theme)}>
+      <Provider mountNode={getFelaMountNode()} renderer={renderer}>
         {children}
       </Provider>
     </ThemeProvider>

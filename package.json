@@ -1,6 +1,6 @@
 {
   "name": "pret-a-porter",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Preact primitive components styled with Fela",
   "main": "lib/index.js",
   "files": [

@@ -173,6 +173,7 @@ const computeStyle = (
     borderStyle,
     borderTopLeftRadius,
     borderTopRightRadius,
+    flex,
     flexBasis,
     flexDirection,
     flexGrow,
