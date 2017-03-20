@@ -199,13 +199,7 @@ const computeStyle = (
     typeof value === "number" ? theme.typography.rhythm(value) : value;
   const computeFontSize = value =>
     typeof value === "number" ? theme.typography.fontSize(value) : value;
-
-  const computeLineHeight = size => {
-    const fontSize = theme.typography.fontSize(size);
-    const lines = Math.ceil(fontSize / theme.typography.lineHeight);
-    const lineHeight = lines * theme.typography.lineHeight;
-    return lineHeight + "px";
-  };
+  const computeLineHeight = size => theme.typography.lineHeight(size);
 
   computeResponsiveStyleProps(rhythmProps, style, computeRhythm);
   computeResponsiveStyleProps(colorProps, style, computeColor);

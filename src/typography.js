@@ -1,41 +1,22 @@
-const scale = {
-  step0: 1,
-  step1: 15 / 16,
-  step2: 8 / 9,
-  step3: 5 / 6,
-  step4: 4 / 5,
-  step5: 3 / 4,
-  step6: 1 / Math.SQRT2,
-  step7: 2 / 3,
-  step8: 5 / 8,
-  step9: 3 / 5,
-  step10: 9 / 16,
-  step11: 8 / 15,
-  step12: 1 / 2,
-  step13: 2 / 5,
-  step14: 3 / 8,
-  step15: 1 / 3,
-  step16: 1 / 4
-};
+const { abs, ceil } = Math;
+import ratios from "./ratios";
 
-const typography = (
-  {
-    fontSize,
-    fontSizeScale,
-    lineHeight
-  }
-) => ({
-  fontSize: level => Array.from(Array(Math.abs(level))).reduce(
-    size => {
-      const scaleRatio = typeof fontSizeScale === "string"
-        ? scale[fontSizeScale]
-        : fontSizeScale;
-      return level > 0 ? size * (1 / scaleRatio) : size / (1 / scaleRatio);
-    },
-    fontSize
-  ),
-  lineHeight,
-  rhythm: ratio => lineHeight * ratio
-});
+const typography = ({ fontSize, lineHeight, ratio, unit = "rem" }) => {
+  const ratioValue = typeof ratio === "string" ? ratios[ratio] : ratio;
+  const rhythm = x => x * lineHeight;
+  const computeFontSize = x =>
+    Array.from(Array(abs(x))).reduce(
+      size => size * (x > 0 ? ratioValue : 1 / ratioValue),
+      fontSize
+    );
+  const computeLines = x => ceil(x / lineHeight);
+  const computeLineHeight = x => rhythm(computeLines(computeFontSize(x)));
+  const withUnit = f => x => f(x) + unit;
+  return {
+    fontSize: withUnit(computeFontSize),
+    lineHeight: withUnit(computeLineHeight),
+    rhythm: withUnit(rhythm)
+  };
+};
 
 export default typography;

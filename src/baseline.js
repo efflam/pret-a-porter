@@ -1,12 +1,11 @@
 import { h } from "preact";
 
-export default ({ color = "#666" }, { theme }) => {
-  const baseline = theme.typography.rhythm(1);
+export default ({ color = "#666", opacity = 0.2, ratio = 1 }, { theme }) => {
   return (
     <div
       style={{
         backgroundImage: `linear-gradient(${color} 1px, transparent 1px)`,
-        backgroundSize: `auto ${baseline}px`,
+        backgroundSize: `auto ${theme.typography.rhythm(ratio)}`,
         marginTop: -1,
         pointerEvents: "none",
         position: "absolute",
@@ -15,7 +14,7 @@ export default ({ color = "#666" }, { theme }) => {
         bottom: 0,
         left: 0,
         zIndex: 9999,
-        opacity: 0.1
+        opacity: opacity
       }}
     />
   );
