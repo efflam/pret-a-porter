@@ -17,9 +17,9 @@ const breakpoints = ["400px", "800px", "1040px", "1280px"];
 const theme = {
   breakpoints: breakpoints,
   typography: typography({
-    fontSize: 1,
-    lineHeight: 1.5,
-    ratio: "perfectFourth"
+    fontSize: 16,
+    lineHeightRatio: 1.5,
+    scaleRatio: "perfectFourth"
   }),
   colors: {
     primary: defaultColors.blue,
