@@ -2,7 +2,6 @@ import { h } from "preact";
 
 import { Provider, ThemeProvider } from "./preact-fela";
 import configureFela from "./configure-fela";
-import defaultTheme from "./default-theme";
 
 const getFelaMountNode = () => {
   const node = document.getElementById("stylesheet");
@@ -16,13 +15,8 @@ const getFelaMountNode = () => {
   return nextNode;
 };
 
-const Root = (
-  {
-    theme = defaultTheme,
-    children
-  }
-) => {
-  const renderer = configureFela(theme)
+const Root = ({ theme, children }) => {
+  const renderer = configureFela(theme);
   return (
     <ThemeProvider theme={theme}>
       <Provider mountNode={getFelaMountNode()} renderer={renderer}>
