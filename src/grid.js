@@ -1,19 +1,21 @@
 import { h, Component } from "preact";
 import Box from "./box";
 
+const spacing = xs => Array.isArray(xs) ? xs.map(x => -x / 2) : -xs / 2;
+
 class Grid extends Component {
   getChildContext() {
     return {
-      gutter: this.props.gutter
+      px: spacing(this.props.gutter)
     };
   }
   render({ gutter, ...props }) {
     return (
       <Box
+        {...props}
         display="flex"
         flexWrap="wrap"
-        mx={Array.isArray(gutter) ? gutter.map(g => -g / 2) : -gutter / 2}
-        {...props}
+        mx={spacing(this.props.gutter)}
       />
     );
   }
@@ -23,12 +25,7 @@ Grid.defaultProps = {
   gutter: 0
 };
 
-const Cell = (props, { gutter }) => (
-  <Box
-    {...props}
-    px={Array.isArray(gutter) ? gutter.map(g => g / 2) : gutter / 2}
-  />
-);
+const Cell = (props, { px }) => <Box {...props} px={px} />;
 
 Cell.defaultProps = {
   width: "100%"

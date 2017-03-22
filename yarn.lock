@@ -1606,7 +1606,7 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-in-js-utils@^1.0.0:
+css-in-js-utils@^1.0.0, css-in-js-utils@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-1.0.3.tgz#9ac7e02f763cf85d94017666565ed68a5b5f3215"
   dependencies:
@@ -2205,26 +2205,26 @@ fd-slicer@~1.0.1:
   dependencies:
     pend "~1.2.0"
 
-fela-dom@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-4.2.6.tgz#fb8b618a3cb9e87a4ae15c438389a2a7057ebb31"
+fela-dom@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-4.3.1.tgz#97f02f712a4d886a11285c8bd7af76452fd1724a"
 
-fela-plugin-named-media-query@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.2.6.tgz#17ea7435a998c4b54d3403a97f75d94ade005150"
+fela-plugin-named-media-query@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.3.1.tgz#561ad404b4fbc149b5edd87ca2d588b40d39ea66"
 
-fela-preset-web@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela-preset-web/-/fela-preset-web-4.2.6.tgz#203604b79cf71d7e6ea8ef9041f8195dee3e3e12"
+fela-preset-web@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/fela-preset-web/-/fela-preset-web-4.3.1.tgz#e971021e98a8d8ece04f47be4f7684b66fd51fd3"
   dependencies:
+    css-in-js-utils "^1.0.3"
     inline-style-prefixer "^3.0.0"
-    unitless-css-property "1.0.2"
 
-fela@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela/-/fela-4.2.6.tgz#093605c789fde268657859dc422234d3cf65afa9"
+fela@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/fela/-/fela-4.3.1.tgz#173a55487c51d9cc1d634cb9fc20416c24306686"
   dependencies:
-    hyphenate-style-name "1.0.1"
+    css-in-js-utils "^1.0.3"
 
 figures@2.0.0, figures@^2.0.0:
   version "2.0.0"
@@ -2686,10 +2686,6 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
-
-hyphenate-style-name@1.0.1, hyphenate-style-name@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.1.tgz#bc49b9446e02b4570641afdd29c1ce7609d1b9cc"
 
 hyphenate-style-name@^1.0.2:
   version "1.0.2"
@@ -4302,6 +4298,10 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
+preact-fela@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/preact-fela/-/preact-fela-4.3.0.tgz#e92c36ea416e3d40c689b88ac352bb2578ce620b"
+
 preact@^7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/preact/-/preact-7.2.0.tgz#8aacc97465a65509bc556604a7750d48e2fa7ad1"
@@ -5256,12 +5256,6 @@ uniqid@^4.0.0:
 uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
-
-unitless-css-property@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/unitless-css-property/-/unitless-css-property-1.0.2.tgz#dd4b666172fba241fcf50b6b31aee126700b170a"
-  dependencies:
-    hyphenate-style-name "^1.0.1"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
