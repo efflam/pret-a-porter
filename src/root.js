@@ -1,6 +1,6 @@
 import { h } from "preact";
 
-import { Provider, ThemeProvider } from "./preact-fela";
+import { Provider, ThemeProvider } from "preact-fela";
 import configureFela from "./configure-fela";
 
 const getFelaMountNode = () => {

@@ -2205,24 +2205,24 @@ fd-slicer@~1.0.1:
   dependencies:
     pend "~1.2.0"
 
-fela-dom@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-4.3.1.tgz#97f02f712a4d886a11285c8bd7af76452fd1724a"
+fela-dom@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-4.3.2.tgz#d60b96078db73e16674582c0464c2618d2381502"
 
-fela-plugin-named-media-query@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.3.1.tgz#561ad404b4fbc149b5edd87ca2d588b40d39ea66"
+fela-plugin-named-media-query@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.3.2.tgz#c831a8e9df5b6f15963b616dd137ec331597ea06"
 
-fela-preset-web@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/fela-preset-web/-/fela-preset-web-4.3.1.tgz#e971021e98a8d8ece04f47be4f7684b66fd51fd3"
+fela-preset-web@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-preset-web/-/fela-preset-web-4.3.2.tgz#5369e098e2cdef14398c6ec9896635c17103607a"
   dependencies:
     css-in-js-utils "^1.0.3"
     inline-style-prefixer "^3.0.0"
 
-fela@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/fela/-/fela-4.3.1.tgz#173a55487c51d9cc1d634cb9fc20416c24306686"
+fela@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela/-/fela-4.3.2.tgz#1e407351bf26d618665bc1bc19708cfbce78bd03"
   dependencies:
     css-in-js-utils "^1.0.3"
 
@@ -4298,9 +4298,9 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-preact-fela@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/preact-fela/-/preact-fela-4.3.0.tgz#e92c36ea416e3d40c689b88ac352bb2578ce620b"
+preact-fela@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/preact-fela/-/preact-fela-4.3.2.tgz#55b7ecb313443850e851e63d04c4bd7d80ddf558"
 
 preact@^7.2.0:
   version "7.2.0"
