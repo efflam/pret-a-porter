@@ -4318,6 +4318,17 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+pret-a-porter@^2.0.22:
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/pret-a-porter/-/pret-a-porter-2.0.22.tgz#8de1dd7a1e14cd160e731419ee0336d270013ebf"
+  dependencies:
+    fela "^4.3.2"
+    fela-dom "^4.3.2"
+    fela-plugin-named-media-query "^4.3.2"
+    fela-preset-web "^4.3.2"
+    preact "^7.2.0"
+    preact-fela "^4.3.2"
+
 pretty-error@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.0.2.tgz#a7db19cbb529ca9f0af3d3a2f77d5caf8e5dec23"

@@ -1,17 +1,14 @@
 module.exports = {
-  type: 'web-module',
+  type: "web-module",
   npm: {
-    esModules: false,
+    esModules: true,
     umd: false
   },
   babel: {
-    presets: [
-      "es2015",
-      "stage-0"
-    ],
+    presets: ["es2015", "stage-0"],
     plugins: [
       ["transform-decorators-legacy"],
-      ["transform-react-jsx", { "pragma": "h" }]
+      ["transform-react-jsx", { pragma: "h" }]
     ]
   }
-}
+};
