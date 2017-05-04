@@ -1,7 +1,8 @@
 import { h, Component } from "preact";
 import Box from "./box";
 
-const spacing = xs => Array.isArray(xs) ? xs.map(x => -x / 2) : -xs / 2;
+const spacing = (xs, mult = 1) =>
+  Array.isArray(xs) ? xs.map(x => x / 2 * mult) : xs / 2 * mult;
 
 class Grid extends Component {
   getChildContext() {
@@ -15,7 +16,7 @@ class Grid extends Component {
         {...props}
         display="flex"
         flexWrap="wrap"
-        mx={spacing(this.props.gutter)}
+        mx={spacing(this.props.gutter, -1)}
       />
     );
   }

@@ -1,6 +1,6 @@
 {
   "name": "pret-a-porter",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Preact primitive components styled with Fela",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -17,13 +17,12 @@
     "test:watch": "nwb test --server"
   },
   "dependencies": {
-    "fela": "^4.3.2",
+    "fela": "^4.3.5",
     "fela-dom": "^4.3.2",
     "fela-plugin-named-media-query": "^4.3.2",
     "fela-preset-web": "^4.3.2",
-    "preact": "^7.2.0",
-    "preact-fela": "^4.3.2",
-    "pret-a-porter": "^2.0.22"
+    "preact": "^8.1.0",
+    "preact-fela": "^4.3.2"
   },
   "devDependencies": {
     "nwb": "0.15.x"
